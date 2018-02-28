@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Bitte den Button</h1>
+<button onclick='httpGet()'>Click </button>
+
+<script>
+function httpGet()
+{
+    var xmlHttp = new XMLHttpRequest();
+	
+    
+    xmlHttp.open( "GET", "https://crossorigin.me/https://google.com" ); 
+	xmlHttp.setRequestHeader("Origin", "localhost");
+    
+    xmlHttp.send(  );
+    ret = xmlHttp.responseText;
+    console.log(ret);
+}
+</script>
+
+</body>
+</html>
